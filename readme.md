@@ -1,4 +1,5 @@
 # Boston Housing 
+## Requirements
 You are a Data Scientist with a housing agency in Boston MA, you have been given access to a previous dataset on housing prices derived from the U.S. Census Service to present insights to higher management. Based on your experience in Statistics, what information can you provide them to help with making an informed decision? Upper management will like to get some insight into the following.
 + Is there a significant difference in the median value of houses bounded by the Charles river or not?
 + Is there a difference in median values of houses of each proportion of owner-occupied units built before 1940?
@@ -16,3 +17,21 @@ Using the appropriate graphs and charts, generate basic statistics and visualiza
 **Task 4**: Generate basic statistics and visualizations for upper management. 
 
 **Task 5**: Use the appropriate tests to answer the questions provided.
+
+## Data Description
+|COLUMN NAME|DATA TYPE|DESCRIPTION| Ý nghĩa|
+|----|----|---|---|
+|CRIM|FLOAT|per capita crime rate by town| tỷ lệ tội phạm bình quân đầu người theo thị trấn|
+|ZN|FLOAT|proportion of residential land zoned for lots over 25,000 sq.ft.| tỷ lệ đất ở được quy hoạch cho các lô có diện tích trên 25.000 sq.ft.|
+|INDUS|FLOAT|proportion of non-retail business acres per town| tỷ lệ diện tích đất dành cho hoạt động kinh doanh phi bán lẻ trong mỗi thị trấn|
+|CHAS|BIT|Charles River dummy variable (1 if tract bounds river; 0 otherwise)| biến giả cho sông Charles (1 nếu khu vực giáp sông; 0 nếu không)|
+|NOX|FLOAT|nitric oxides concentration (parts per 10 million)| nồng độ oxit nitric NO (phần trên 10 triệu)|
+|RM|FLOAT|average number of rooms per dwelling| số phòng trung bình trên mỗi nhà ở|
+|AGE|FLOAT|proportion of owner-occupied units built prior to 1940| tỷ lệ các căn nhà do chủ sở hữu ở được xây dựng trước năm 1940|
+|DIS|FLOAT|weighted distances to five Boston employment centres| khoảng cách có trọng số đến năm trung tâm việc làm ở Boston|
+|RAD|INT|index of accessibility to radial highways| chỉ số khả năng tiếp cận các đường cao tốc hướng tâm|
+|TAX|FLOAT|full-value property-tax rate per $10,000| tỷ lệ thuế bất động sản đầy đủ trên mỗi $10,000|
+|PTRATIO|FLOAT|pupil-teacher ratio by town| tỷ lệ học sinh trên giáo viên theo thị trấn|
+|B|FLOAT|1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town| 1000(Bk - 0.63)^2 trong đó Bk là tỷ lệ người da đen theo thị trấn|
+|LSTAT|FLOAT|% lower status of the population| tỷ lệ phần trăm dân số có địa vị thấp hơn|
+|MEDV|FLOAT|Median value of owner-occupied homes in $1000's| Giá trị trung vị của nhà ở do chủ sở hữu ở tính bằng $1000|
