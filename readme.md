@@ -1,5 +1,35 @@
 # Boston Housing 
-## Requirements
+
+## Introduction 
+Build a model for predict the house price in Boston and construct a basic web application to run the ML model.
+
+![Sample Web App](./images/app.png)"
+
+**How to run?** In the terminal, run these codes: 
+```shell
+git clone https://github.com/sinhvienfpt/udacity-disaster-response-pipeline.git
+cd app 
+python run.py
+```
+Then go to http://localhost:8501/ to try it.
+
+## Installation
+Using ```pip install -r requirements.txt``` 
+
+The following is the libraries versions and supported Python versions.
+```# Python version
+python~=3.11.7
+
+scikit-learn~=0.18 
+pandas~=1.5.3
+streamlit~=1.32.0
+numpy~=1.24.4
+matplotlib~=3.9.0
+scipy==1.14.0
+seaborn==0.13.2
+```
+
+## About the problem
 You are a Data Scientist with a housing agency in Boston MA, you have been given access to a previous dataset on housing prices derived from the U.S. Census Service to present insights to higher management. Based on your experience in Statistics, what information can you provide them to help with making an informed decision? Upper management will like to get some insight into the following.
 + Is there a significant difference in the median value of houses bounded by the Charles river or not?
 + Is there a difference in median values of houses of each proportion of owner-occupied units built before 1940?
