@@ -1,10 +1,13 @@
 import numpy as np
-
+import pandas as pd
 import streamlit as st
 import pickle
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-# 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
+# Load the model
 model = pickle.load(open('../model/model.pkl', 'rb'))
 
 cols =['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX',
@@ -96,6 +99,16 @@ class StreamlitApp:
             unsafe_allow_html=True
         )
 
-
+        # MEDV 
+        mdev = pd.read_csv('../data/housing_comma.csv')['MEDV']
+    
+        # Histogram for MEDV
+        plt.figure(figsize=(10, 6))
+        sns.histplot(mdev, bins=30, kde=True)
+        plt.title('MEDV Distribution')
+        plt.xlabel('MEDV')
+        plt.ylabel('Frequency')
+        st.pyplot()
+        
 sa = StreamlitApp()
 sa.construct_app()
